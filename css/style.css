@@ -785,16 +785,16 @@ footer{
 
 @media (max-width: 480px){
    .slider{
-      height: 170px;
-      width: 270px;
+      height: 190px;
+      width: 300px;
    }
 
    .slide img{
-      height: 170px;
-      width: 270px;
+      height: 190px;
+      width: 300px;
    }
    .yt-video{
-      height: 170px;
-      width: 270px;
+      height: 190px;
+      width: 300px;
    }
 }
