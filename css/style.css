@@ -782,7 +782,8 @@ footer{
    }
 }
 
-@media (max-width: 600px){
+
+@media (max-width: 480px){
    .slider{
       height: 170px;
       width: 270px;
