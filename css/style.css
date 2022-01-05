@@ -785,6 +785,16 @@ footer{
       height: 350px;
       width: 470px;
    }
+
+   .wisa-banner{
+      height: 350px;
+      width: 550px;
+   }
+
+   main{
+      width: 90%;
+      overflow: hidden;
+   }
 }
 
 @media (max-width: 600px){
@@ -807,6 +817,7 @@ footer{
       height: 220px;
       width: 350px;
    }
+}
 
    @media (max-width: 480px){
       main{
@@ -828,5 +839,9 @@ footer{
          height: 190px;
          width: 300px;
       }
+
+      .wisa-banner{
+         height: 220px;
+         width: 350px;
+      }
    }
-}
