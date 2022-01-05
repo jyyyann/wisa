@@ -284,13 +284,13 @@ header{
 }
  
 main{
-   width: 80%;
+   width: 70%;
    margin: auto;
    text-align: center;
 }
  
 .description{
-   width: 80%;
+   min-width: 70%;
    margin: auto;
    padding: 2rem 0;
    text-align: left;
@@ -554,14 +554,14 @@ footer{
  
 
 .logos{
-   padding: 80px 0;
+   padding-top: 40px;
 }
 
 .logo-con {
    padding: 20px 0;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-gap: 0.7em;
+   grid-gap: 0.8em;
    margin: auto;
  }
 
@@ -571,8 +571,8 @@ footer{
  }
 
 .logo:hover{
-   background-color: #51dbc9;
    transition: 1.2s;
+   transform: scale(1.1); /* enlarge when hover */
 }
 
 .yt-video{
@@ -585,6 +585,11 @@ footer{
    padding: 2rem 2rem;
    border-radius: 10px;
    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.role:hover{
+   transition: 1.2s;
+   transform: scale(1.04);
 }
 
 .role h2{
@@ -774,5 +779,21 @@ footer{
    .yt-video{
       height: 350px;
       width: 470px;
+   }
+}
+
+@media (max-width: 480px){
+   .slider{
+      height: 140px;
+      width: 270px;
+   }
+
+   .slide img{
+      height: 140px;
+      width: 270px;
+   }
+   .yt-video{
+      height: 140px;
+      width: 270px;
    }
 }
