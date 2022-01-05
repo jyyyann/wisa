@@ -19,8 +19,13 @@ body{
    font-family: 'Montserrat', sans-serif;
 }
  
-h1, h2{
+h1, h2, h3{
    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+   font-size: 1.3rem;
+   padding-bottom: 2px;
 }
  
 p{
@@ -28,6 +33,16 @@ p{
    font-size: 1.2rem;
    line-height: 2.2rem;
 }
+
+.p-links{
+   color: #5cb4b0;
+   text-decoration: underline;
+}
+
+.p-links:hover{
+   color: #51dbc9;
+}
+
  
 ul{
    list-style: none;
@@ -84,7 +99,7 @@ header{
 }
  
 .log-sign a:hover{
-   color: aquamarine;
+   color: #51dbc9;
 }
  
 .nav-links > ul{
@@ -287,7 +302,7 @@ main{
    margin: auto;
 }
  
-.home-banner, .welcome, .videobox, .aboutwisa, .values, .vision{
+.home-banner, .welcome, .videobox, .aboutwisa, .values, .vision, .roles, .why, .nomination{
    padding: 2rem 0;
 }
  
@@ -298,7 +313,7 @@ main{
 }
  
 .int{
-   color: aquamarine;
+   color: #51dbc9;
    font-size: 3rem;
 }
  
@@ -438,7 +453,7 @@ footer{
    content: '';
    height: 2px;
    width: 15%;
-   background: #50C7C7;
+   background: #51dbc9;
    top: -10px;
 }
  
@@ -464,7 +479,7 @@ footer{
 }
  
 .left .content .social a i:hover{
-   color: aquamarine;
+   color: #51dbc9;
 }
  
 .center .content .fas{
@@ -478,7 +493,7 @@ footer{
 }
  
 .center .content .fas:hover{
-   color: #50C7C7;
+   color: #51dbc9;
 }
  
 .center .content .text{
@@ -506,7 +521,7 @@ footer{
  
 .right form input:focus,
 .right form textarea:focus{
-   outline-color: aquamarine;
+   outline-color: #51dbc9;
 }
  
 .right form .btn{
@@ -556,7 +571,7 @@ footer{
  }
 
 .logo:hover{
-   background-color: #50C7C7;
+   background-color: #51dbc9;
    transition: 1.2s;
 }
 
@@ -566,8 +581,15 @@ footer{
    margin: auto;
 }
 
+.role{
+   padding: 2rem 2rem;
+   border-radius: 10px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
-
+.role h2{
+   color: #51dbc9;
+}
 
 @keyframes animation{
    from{
@@ -728,6 +750,16 @@ footer{
    footer{
        position: relative;
        bottom: 0px;
+   }
+
+   .slider{
+      height: 280px;
+      width: 450px;
+   }
+
+   .slide img{
+      height: 280px;
+      width: 450px;
    }
  
    .main-content{
