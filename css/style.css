@@ -295,14 +295,19 @@ main{
    padding: 2rem 0;
    text-align: left;
 }
- 
+
+.wisa-banner{
+   height: 500px;
+   width: 800px;
+}
+
 .slider{
    display: block;
    width: 70%;
    margin: auto;
 }
  
-.home-banner, .welcome, .videobox, .aboutwisa, .values, .vision, .roles, .why, .nomination{
+.home-banner, .welcome, .videobox, .aboutwisa, .values, .vision, .recruit, .roles, .why, .nomination{
    padding: 2rem 0;
 }
  
@@ -785,6 +790,7 @@ footer{
 @media (max-width: 600px){
    main{
       width: 90%;
+      overflow: hidden;
    }
 
    .slider{
@@ -805,6 +811,7 @@ footer{
    @media (max-width: 480px){
       main{
          width: 90%;
+         overflow: hidden;
       }
    
       .slider{
