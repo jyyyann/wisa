@@ -796,4 +796,29 @@ footer{
       height: 220px;
       width: 350px;
    }
+
+   .yt-video{
+      height: 220px;
+      width: 350px;
+   }
+
+   @media (max-width: 480px){
+      main{
+         width: 90%;
+      }
+   
+      .slider{
+         height: 190px;
+         width: 300px;
+      }
+   
+      .slide img{
+         height: 190px;
+         width: 300px;
+      }
+
+      .yt-video{
+         height: 190px;
+         width: 300px;
+      }
 }
