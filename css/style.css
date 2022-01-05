@@ -782,18 +782,18 @@ footer{
    }
 }
 
-@media (max-width: 480px){
+@media (max-width: 600px){
    .slider{
-      height: 140px;
+      height: 170px;
       width: 270px;
    }
 
    .slide img{
-      height: 140px;
+      height: 170px;
       width: 270px;
    }
    .yt-video{
-      height: 140px;
+      height: 170px;
       width: 270px;
    }
 }
