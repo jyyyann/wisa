@@ -782,19 +782,9 @@ footer{
    }
 }
 
+@media (max-width: 600px){
 
-@media (max-width: 480px){
-   .slider{
-      height: 190px;
-      width: 300px;
-   }
-
-   .slide img{
-      height: 190px;
-      width: 300px;
-   }
-   .yt-video{
-      height: 190px;
-      width: 300px;
+   main{
+      width: 90%;
    }
 }
