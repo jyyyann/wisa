@@ -117,7 +117,7 @@ header{
    color: black;
    text-transform: uppercase;
    font-weight: 600;
-   padding: 0 2rem;
+   padding: 0.5rem 2rem;
    letter-spacing: 0.5px;
    font-size: .95rem;
    display: flex;
@@ -142,7 +142,7 @@ header{
    opacity: 0;
    pointer-events: none;
    transition: .3s;
-   width: 12rem;
+   width: 14rem;
 }
  
 .dropdown ul{
@@ -151,23 +151,37 @@ header{
  
 .dropdown-link > a{
    display: flex;
-   background-color: #fff;
+   background-color: white;
    color: black;
-   padding: .5rem 1rem;
+   padding: .7rem 1rem;
    font-size: 0.95rem;
    align-items: center;
    justify-content: space-between;
    transition: .3s;
    font-weight: 600;
+   border-left: 1px solid #efefef;
+   border-right: 1px solid #efefef;
+}
+
+.dropdown-link:first-child > a{
+   border-radius: 10px 10px 0 0;
+   border-top: 1px solid #efefef;
+}
+
+.dropdown-link:last-of-type > a{
+   border-radius: 0 0 10px 10px;
+   border-bottom: 1px solid #efefef;
 }
  
 .dropdown-link:hover > a{
    color: #50C7C7;
 }
  
+/*
 .dropdown-link:not(:nth-last-child(2)){
    border-bottom: 1px solid #efefef;
 }
+*/
  
 .dropdown-link i{
    transform: rotate(-90deg);
@@ -315,7 +329,7 @@ main{
    margin: auto;
 }
  
-.banner-box, .welcome, .videobox, .aboutwisa, .values, .vision, .recruit, .roles, .why, .nomination, .events, .event{
+.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .vision, .recruit, .roles, .why, .nomination, .events, .event{
    padding: 2rem 0;
 }
  
@@ -570,7 +584,7 @@ footer{
    padding-top: 40px;
 }
 
-.logo-con, .event{
+.logo-con{
    padding: 20px 0;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -579,11 +593,11 @@ footer{
  }
 
  .event{
-   justify-content: center;
-      display: flex;
-      
-      flex-wrap: wrap;
-      grid-gap: 1.5em;
+   padding: 20px 0;
+   justify-content: left;
+   display: flex;
+   flex-wrap: wrap;
+   grid-gap: 1.5em;
  }
 
  .logo-con img{
@@ -736,19 +750,25 @@ footer{
 .accordion__button::after{
    content: '\002B'; /*a plus sign*/
    float: right;
-   transform: scale(1.5);
+   transform: scale(1.9);
 }
 
 .accordion__button--active + .accordion__content {display: block;}
-.accordion__button--active {background: transparent;}
-.accordion__button--active::after {content: '\002D';} /*a minus sign*/
+.accordion__button--active {
+   background: transparent;
+   font-weight: 600;
+}
+
+.accordion__button--active::after {
+   content: '\002D'; /*a minus sign*/
+   font-weight: 300;
+} 
 
 .accordion__content{
    padding: 20px;
    font-family: 'Montserrat', sans-serif;
    text-align: left;
-   border-radius: 0 0 10px 10px;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+   border-bottom: 2px solid #eee;
    display: none;
    overflow: auto;
 }
