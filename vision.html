@@ -160,10 +160,36 @@
               
        <div class="vision">
            <h1>Our Vision</h1>
-           <div class="description">
-               <p>Our vision for this club is to allow the opportunity for international students to make the most of, but more importantly, enjoy their time studying in Wellington.
-               We organise events and hangouts which allow students to meet up regularly and have fun while meeting new people from all around the globe.</p><br><br>
+ 
+            <div class="accordion">
+                <button type="button" class="accordion__button first">Settlement support</button>
+                <div class="accordion__content">
+                    <p>
+                        With the possibility of border reopening next year, we might be welcoming more international students to Wellington. 
+                        We have first hand experience how tricky it could be to settle in a new country on our own, 
+                        we hope to support new students integrating to the community more seamlessly.
+                    </p>
+                </div>
+
+                <button type="button" class="accordion__button">Settlement support</button>
+                <div class="accordion__content">
+                    <p>
+                        With the possibility of border reopening next year, we might be welcoming more international students to Wellington. 
+                        We have first hand experience how tricky it could be to settle in a new country on our own, 
+                        we hope to support new students integrating to the community more seamlessly.
+                    </p>
+                </div>
+
+                <button type="button" class="accordion__button">Settlement support</button>
+                <div class="accordion__content">
+                    <p>
+                        With the possibility of border reopening next year, we might be welcoming more international students to Wellington. 
+                        We have first hand experience how tricky it could be to settle in a new country on our own, 
+                        we hope to support new students integrating to the community more seamlessly.
+                    </p>
+                </div>
             </div>
+
         </div>
  
            <h1>Our Values</h1>
@@ -249,3 +275,19 @@
            </div>
        </footer>
 </html>
+
+<script>
+    document.querySelectorAll('.accordion__button').forEach(button => {
+        button.addEventListener('click', () => { 
+            // const accordionContent = button.nextElementSibling;
+
+            button.classList.toggle('accordion__button--active');
+
+            // if (button.classList.contains('accordion__button--active')){
+            //    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            // } else {
+            //    accordionContent.style.maxHeight = 0;
+            //}
+        });
+    });
+</script>

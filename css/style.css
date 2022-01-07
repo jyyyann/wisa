@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
  
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 /*font-family: 'Montserrat', sans-serif;*/ /*p*/
  
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
@@ -115,8 +115,10 @@ header{
 .nav-link > a{
    line-height: 4rem;
    color: black;
-   padding: 0 1.5rem;
-   letter-spacing: 1px;
+   text-transform: uppercase;
+   font-weight: 600;
+   padding: 0 2rem;
+   letter-spacing: 0.5px;
    font-size: .95rem;
    display: flex;
    align-items: center;
@@ -129,18 +131,18 @@ header{
 }
  
 .nav-link:hover > a{
-   transform: scale(1.1); /* enlarge when hover */
+   transform: scale(1.05); /* enlarge when hover */
 }
  
 .dropdown{
    position: absolute;
    top: 100%;
    left: 0;
-   width: 10rem;
    transform: translateY(10px);
    opacity: 0;
    pointer-events: none;
-   transition: .5s;
+   transition: .3s;
+   width: 12rem;
 }
  
 .dropdown ul{
@@ -152,15 +154,15 @@ header{
    background-color: #fff;
    color: black;
    padding: .5rem 1rem;
-   font-size: .9rem;
+   font-size: 0.95rem;
    align-items: center;
    justify-content: space-between;
    transition: .3s;
+   font-weight: 600;
 }
  
 .dropdown-link:hover > a{
-   background-color: black;
-   color: #f5f5f5;
+   color: #50C7C7;
 }
  
 .dropdown-link:not(:nth-last-child(2)){
@@ -185,7 +187,7 @@ header{
 }
  
 .dropdown-link:first-child:hover ~ .arrow{
-   background-color: black;
+   background-color: #50C7C7;
 }
  
 .dropdown-link{
@@ -589,11 +591,7 @@ footer{
       height: 100%;
  }
 
-
-
-
-
-
+ /*flip cards for events start*/
 
  .flip-card img{
       float: left;
@@ -664,7 +662,7 @@ footer{
    padding-bottom: 0;
  }
 
-
+/*flip cards for events end*/
 .trans-btn{
    background-color: transparent;
    font-family: 'Montserrat', sans-serif;
@@ -703,14 +701,57 @@ footer{
 .role:hover{
    transition: 1.2s;
    transform: scale(1.04);
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.role h2{
-   color: #51dbc9;
+.category p{
+   font-size: 0.98rem;
+   color: rgb(55, 76, 77);
 }
 
+/*accordion on vision page starts*/
+.accordion{
+   padding: 40px 0;
+}
+.accordion__button{
+   display: block;
+   width: 100%;
+   padding: 15px;
+   border: none;
+   outline: none;
+   cursor: pointer;
 
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.2rem;
+   background-color: transparent;
+   text-align: left;
+   border-bottom: 2px solid #eee;
+   transition: background 0.2s;
+}
 
+.first{
+   border-top: 2px solid #eee;
+}
+
+.accordion__button::after{
+   content: '\002B'; /*a plus sign*/
+   float: right;
+   transform: scale(1.5);
+}
+
+.accordion__button--active + .accordion__content {display: block;}
+.accordion__button--active {background: transparent;}
+.accordion__button--active::after {content: '\002D';} /*a minus sign*/
+
+.accordion__content{
+   padding: 20px;
+   font-family: 'Montserrat', sans-serif;
+   text-align: left;
+   border-radius: 0 0 10px 10px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+   display: none;
+   overflow: auto;
+}
 
 @keyframes animation{
    from{
