@@ -601,6 +601,7 @@ footer{
    flex-wrap: wrap;
    grid-gap: 1.5em;
  }
+ 
 
  .logo-con img{
       width: 100%;
@@ -743,8 +744,7 @@ footer{
 
  /* Do an horizontal flip when you move the mouse over the flip box container */
 
- .flip-card:not(.manual-flip):hover .flip-card-inner,
-  .flip-card.hover.manual-flip .flip-card-inner {
+ .flip-card:hover .flip-card-inner{
    transform: rotateY(180deg);
  }
  
@@ -1101,6 +1101,10 @@ footer{
 }
 
    @media (max-width: 480px){
+      .vision-card.is-flipped {
+         transform: rotateY(180deg);
+       }
+
       main{
          width: 90%;
          overflow: hidden;
