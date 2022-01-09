@@ -129,7 +129,17 @@
         </div>
     </div>
     
-    <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var cardToFlip = document.querySelectorAll(".flip-card-inner");
+
+    for (var card of cardToFlip){
+    card.addEventListener("click", toggleToFlip);
+    }
+
+    function toggleToFlip() {
+    this.classList.toggle("flipped");
+    }
+    </script>
     
     </div>
     
