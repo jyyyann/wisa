@@ -308,7 +308,7 @@ main{
 .description, .event-des{
    min-width: 70%;
    margin: auto;
-   padding: 2rem 0;
+   padding: 2rem 1rem;
    text-align: left;
 }
 
@@ -317,22 +317,20 @@ main{
    width: 800px;
 }
 
-.exec-banner{
-   height: 600px;
-   width: 800px;
-   border-radius: 15px;
-}
-
 .slider{
    display: block;
    width: 70%;
    margin: auto;
 }
  
-.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .vision, .recruit, .roles, .why, .nomination, .events, .event{
+.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event{
    padding: 2rem 0;
 }
  
+.vision{
+   padding: 4rem 0 3rem 0;
+}
+
 .values, .pos{
    text-align: left;
    font-family: 'Lora', serif;
@@ -346,7 +344,7 @@ main{
  
 .slider{
    width: 800px;
-   height: 500px;
+   height: 530px;
    border-radius: 10px;
    overflow: hidden;
 }
@@ -368,7 +366,7 @@ main{
  
 .slide img{
    width: 800px;
-   height: 500px;
+   height: 530px;
 }
  
 /*css for manual slides*/
@@ -592,9 +590,9 @@ footer{
    margin: auto;
  }
 
- .event{
+ .event, .visions{
    padding: 20px 0;
-   justify-content: left;
+   justify-content: flex-start;
    display: flex;
    flex-wrap: wrap;
    grid-gap: 1.5em;
@@ -642,9 +640,95 @@ footer{
    height: 550px;
    border-radius: 15px;
  }
- 
+
+ .vision-card{
+   background-color: transparent;
+   width: 490px;
+   height: 400px;
+ }
+
+ .vision-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+ }
+
+ /*vision*/
+ .support{
+   background-image: 
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),
+   url(../assets/support.jpg);
+ }
+
+ .culture{
+   background-image: 
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),
+   url(../assets/culture.jpg);
+ }
+
+ .welfare{
+   background-image: 
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),
+   url(../assets/welfare.jpg);
+ }
+
+ .contribute{
+   background-image: 
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),
+   url(../assets/contribute.jpg);
+ }
+
+ .community{
+   background-image: 
+   linear-gradient(
+     rgba(0, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.5)
+   ),
+   url(../assets/community.jpg);
+ }
+
+
+ /*global starts*/
+ .support, .culture, .welfare, .contribute, .community{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+ }
+
+ .vision-card-front{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .vision-des{
+    text-align: left;
+    padding: 3rem;
+ }
+
+ .vision-card-back{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ /*global ends*/
+
  /* This container is needed to position the front and back side */
- .flip-card-inner {
+ .flip-card-inner, .vision-card-inner {
    position: relative;
    width: 100%;
    height: 100%;
@@ -654,12 +738,12 @@ footer{
  }
  
  /* Do an horizontal flip when you move the mouse over the flip box container */
- .flip-card:hover .flip-card-inner {
+ .flip-card:hover .flip-card-inner, .vision-card:hover .vision-card-inner{
    transform: rotateY(180deg);
  }
  
  /* Position the front and back side */
- .flip-card-front, .flip-card-back {
+ .flip-card-front, .flip-card-back, .vision-card-front, .vision-card-back{
    position: absolute;
    border-radius: 15px;
    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -670,13 +754,12 @@ footer{
  }
  
  /* Style the back side */
- .flip-card-back {
+ .flip-card-back, .vision-card-back {
    transform: rotateY(180deg);
-   padding-top: 1.2rem;
-   padding-bottom: 0;
  }
 
 /*flip cards for events end*/
+
 .trans-btn{
    background-color: transparent;
    font-family: 'Montserrat', sans-serif;
@@ -785,6 +868,10 @@ footer{
 }
  
 @media (max-width: 920px){
+   .event, .visions{
+      justify-content: center;
+   }
+
    .hamburger-menu-container{
        display: flex;
    }
@@ -871,6 +958,7 @@ footer{
        color: #fff;
        padding: 1.2rem 2rem;
        line-height: 1;
+       border: transparent;
    }
  
    .dropdown.second .dropdown-link > a{
@@ -935,13 +1023,13 @@ footer{
    }
 
    .slider{
-      height: 280px;
-      width: 450px;
+      height: 400px;
+      width: 600px;
    }
 
    .slide img{
-      height: 280px;
-      width: 450px;
+      height: 400px;
+      width: 600px;
    }
  
    .main-content{
@@ -954,17 +1042,12 @@ footer{
    }
 
    .yt-video{
-      height: 350px;
-      width: 470px;
+      height: 400px;
+      width: 600px;
    }
 
    .home-banner{
       height: 340px;
-      width: 550px;
-   }
-
-   .exec-banner{
-      height: 410px;
       width: 550px;
    }
 
@@ -980,19 +1063,23 @@ footer{
       overflow: hidden;
    }
 
+   .event{
+      justify-content: center;
+   }
+
    .slider{
-      height: 220px;
-      width: 350px;
+      height: 330px;
+      width: 500px;
    }
 
    .slide img{
-      height: 220px;
-      width: 350px;
+      height: 330px;
+      width: 500px;
    }
 
    .yt-video{
-      height: 220px;
-      width: 350px;
+      height: 400px;
+      width: 600px;
    }
 }
 
@@ -1003,27 +1090,22 @@ footer{
       }
    
       .slider{
-         height: 190px;
-         width: 300px;
+         height: 210px;
+         width: 320px;
       }
    
       .slide img{
-         height: 190px;
-         width: 300px;
+         height: 210px;
+         width: 320px;
       }
 
       .yt-video{
-         height: 190px;
-         width: 300px;
+         height: 210px;
+         width: 320px;
       }
 
       .home-banner{
          height: 220px;
-         width: 350px;
-      }
-
-      .exec-banner{
-         height: 260px;
          width: 350px;
       }
    }
