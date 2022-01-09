@@ -15,70 +15,6 @@
    box-sizing: border-box;
 }
 
-/*click flip card starts*/
-label{
-   display: block;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 280px;
-   height: 350px;
-   perspective: 800px;
-   transform-style: preserve-3d;
-   transform: translate(-50%, -50%);
-   cursor: pointer;
-}
-
-.flip-cad{
-   position: relative;
-   width: 100%;
-   height: 100%;
-   transform-style: preserve-3d;
-   transition: all 0.3s ease-in-out;
-   z-index: 1;
-}
-
-.flip-cad .front, 
-.flip-cad .back{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   text-align: center;
-   background: green;
-   backface-visibility: hidden;
-}
-
-.flip-cad .back{
-   transform: rotateY(180deg);
-   color: #000;
-   background: #50C7C7;
-}
-
-label:hover .flip-cad{
-   transform: rotateY(2deg);
-}
-
-input{
-   display: none;
-}
-
-:checked + .flip-cad{
-   transform: rotateY(180deg);
-}
-
-label:hover :checked + .flip-cad{
-   transform: rotateY(175deg);
-}
-
-
-
-
-
-
-
-
-
-
 
 body, html{
    overflow-x: hidden;
@@ -709,6 +645,8 @@ footer{
    width: 320px;
    height: 550px;
    border-radius: 15px;
+
+   perspective: 1000px;
  }
 
  .vision-card{
@@ -779,8 +717,6 @@ footer{
  }
 
  
-
-
  /*global starts*/
  .support, .culture, .welfare, .contribute, .community, .adventure{
     width: 100%;
@@ -809,6 +745,7 @@ footer{
  /*global ends*/
 
  /* This container is needed to position the front and back side */
+ /*
  .flip-card-inner, .vision-card-inner {
    position: relative;
    width: 100%;
@@ -817,9 +754,18 @@ footer{
    transition: transform 1.2s;
    transform-style: preserve-3d;
  }
+*/
 
+.flip-card-inner, .vision-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   transition: transform 1.2s;
+   transform-style: preserve-3d;
+   cursor: pointer;
+}
  /* Do an horizontal flip when you move the mouse over the flip box container */
-
+/*
  .flip-card:hover .flip-card-inner{
    transform: rotateY(180deg);
  }
@@ -827,16 +773,39 @@ footer{
  .vision-card:hover .vision-card-inner{
    transform: rotateY(180deg);
  }
+ */
+
+ .flip-card-inner.flipped {
+   transform: rotateY(180deg);
+ }
+
+ .vision-card-inner.flipped{
+    transform: rotateY(180deg);
+ }
+
  
  /* Position the front and back side */
+ /*
  .flip-card-front, .flip-card-back, .vision-card-front, .vision-card-back{
    position: absolute;
    border-radius: 15px;
    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    width: 100%;
    height: 100%;
-   -webkit-backface-visibility: hidden; /* Safari */
+   -webkit-backface-visibility: hidden; /* Safari 
    backface-visibility: hidden;
+ }
+ */
+
+ .flip-card-front, .flip-card-back, .vision-card-front, .vision-card-back{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   overflow: hidden;
+   border-radius: 15px;
+   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
  }
  
  /* Style the back side */
