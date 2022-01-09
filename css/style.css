@@ -607,7 +607,7 @@ footer{
       height: 100%;
  }
 
- /*flip cards for events start*/
+ /*flip cards for events and vision start*/
 
  .flip-card img{
       float: left;
@@ -657,7 +657,7 @@ footer{
     border-radius: 15px;
  }
 
- /*vision*/
+ /*vision listed*/
  .support{
    background-image: 
    linear-gradient(
@@ -740,9 +740,15 @@ footer{
    transition: transform 1.2s;
    transform-style: preserve-3d;
  }
- 
+
  /* Do an horizontal flip when you move the mouse over the flip box container */
- .flip-card:hover .flip-card-inner, .vision-card:hover .vision-card-inner{
+
+ .flip-card:not(.manual-flip):hover .flip-card-inner,
+  .flip-card.hover.manual-flip .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ .vision-card:hover .vision-card-inner{
    transform: rotateY(180deg);
  }
  
