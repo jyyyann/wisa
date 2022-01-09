@@ -870,7 +870,14 @@ footer{
        transform: translateY(0px);
    }
 }
- 
+
+
+@media (max-width: 1500px){
+   .visions{
+      justify-content: center;
+   }
+}
+
 @media (max-width: 920px){
    .event, .visions{
       justify-content: center;
