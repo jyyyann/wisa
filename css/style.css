@@ -650,7 +650,7 @@ footer{
    color: #50C7C7;
 }
 
- .flip-card, .member{
+ .flip-card{
    background-color: transparent;
    width: 320px;
    height: 550px;
@@ -663,6 +663,7 @@ footer{
    background-color: transparent;
    width: 490px;
    height: 400px;
+   perspective: 1000px;
  }
 
  .vision-card img{
