@@ -1,3 +1,5 @@
+//works locally, not on github
+
 var cardToFlip = document.querySelectorAll(".flip-card-inner");
 
     for (var card of cardToFlip){

@@ -110,9 +110,47 @@
         </div>
     </div>
     
-    <div class="banner-box">
-        <img src="./assets/wisaexec.jpeg" alt="" class="exec-banner">
-        <p>First row (from left to right): Wee, Junil Bae (Vice President)</p>
+    <h1>Meet the Team</h1><br>
+    <div class="members">
+        <div class="member">
+            <div class="member-img">
+                <img src="../Untitled/assets/profile.png" alt="">
+            </div>
+            <div class="member-des">
+                <h1>Jasmine Yip &nbsp;<img src="./eps/183-hong-kong.eps" alt="" class="flag"></h1>
+                <h3>Vice President</h3>
+                <div class="details">
+                    <p><i class="fas fa-suitcase"></i> Vice President</p>
+                    <p><i class="fab fa-instagram"></i> @ jyyyann</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="member-img">
+                <img src="../Untitled/assets/profile.png" alt="">
+            </div>
+            <div class="member-des">
+                <h1>Jasmine Yip &nbsp;<img src="./eps/183-hong-kong.eps" alt="" class="flag"></h1>
+                <div class="details">
+                    <p><i class="fas fa-suitcase"></i> Vice President</p>
+                    <p><i class="fab fa-instagram"></i> @ jyyyann</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="member-img">
+                <img src="../Untitled/assets/profile.png" alt="">
+            </div>
+            <div class="member-des">
+                <h1>Jasmine Yip &nbsp;<img src="./eps/183-hong-kong.eps" alt="" class="flag"></h1>
+                <div class="details">
+                    <p><i class="fas fa-suitcase"></i> Vice President</p>
+                    <p><i class="fab fa-instagram"></i> @ jyyyann</p>
+                </div>
+            </div>
+        </div>
     </div>
  
    </main>
@@ -183,3 +221,15 @@
 </footer>
  
 </html>
+
+<script type="text/javascript">
+    var cardToFlip = document.querySelectorAll(".member-inner");
+
+for (var card of cardToFlip){
+card.addEventListener("click", toggleToFlip);
+}
+
+function toggleToFlip() {
+this.classList.toggle("flipped");
+}
+</script>

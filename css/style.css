@@ -310,7 +310,7 @@ main{
    text-align: center;
 }
  
-.description, .event-des{
+.description, .event-des, .member-des{
    min-width: 70%;
    margin: auto;
    padding: 2rem 1rem;
@@ -328,7 +328,7 @@ main{
    margin: auto;
 }
  
-.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event{
+.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event, .members{
    padding: 2rem 0;
 }
  
@@ -595,12 +595,17 @@ footer{
    margin: auto;
  }
 
- .event, .visions{
+ .event, .visions, .members{
    padding: 20px 0;
-   justify-content: flex-start;
+   /*justify-content: center;
+   align-content: space-between;*/
+
+   justify-content: space-between;
+   align-items: left;
    display: flex;
    flex-wrap: wrap;
    grid-gap: 1.5em;
+   margin: auto;
  }
  
 
@@ -609,7 +614,7 @@ footer{
       height: 100%;
  }
 
- /*flip cards for events and vision start*/
+ /*flip cards for events and vision and member start*/
 
  .flip-card img{
       float: left;
@@ -621,6 +626,11 @@ footer{
 
 .event-img{
    height: 300px;
+}
+
+.member-img img{
+   padding: 1.5rem 1.5rem 0 1.5rem;
+   height: 280px;
 }
 
 .event-des{
@@ -640,7 +650,7 @@ footer{
    color: #50C7C7;
 }
 
- .flip-card {
+ .flip-card, .member{
    background-color: transparent;
    width: 320px;
    height: 550px;
@@ -756,7 +766,7 @@ footer{
  }
 */
 
-.flip-card-inner, .vision-card-inner {
+.flip-card-inner, .vision-card-inner{
    position: relative;
    width: 100%;
    height: 100%;
@@ -782,7 +792,6 @@ footer{
  .vision-card-inner.flipped{
     transform: rotateY(180deg);
  }
-
  
  /* Position the front and back side */
  /*
@@ -809,12 +818,14 @@ footer{
  }
  
  /* Style the back side */
- .flip-card-back, .vision-card-back {
+ .flip-card-back, .vision-card-back{
    transform: rotateY(180deg);
  }
 
 /*flip cards for events end*/
 
+
+/*button starts*/
 .trans-btn{
    background-color: transparent;
    font-family: 'Montserrat', sans-serif;
@@ -832,6 +843,9 @@ footer{
    color: white;
    transition: 1s;
 }
+
+
+/*button ends*/
 
 .logo:hover{
    transition: 1.2s;
@@ -895,6 +909,7 @@ footer{
 .accordion__button--active {
    background: transparent;
    font-weight: 600;
+   border-bottom: transparent;
 }
 
 .accordion__button--active::after {
@@ -903,12 +918,26 @@ footer{
 } 
 
 .accordion__content{
-   padding: 20px;
+   padding: 20px 15px;
    font-family: 'Montserrat', sans-serif;
    text-align: left;
    border-bottom: 2px solid #eee;
    display: none;
    overflow: auto;
+}
+
+.flag{
+   width: 35px;
+   height: 23px;
+}
+
+.member-des h1{
+   text-align: center;
+   font-size: 1.70rem;
+}
+
+.member-des h3{
+   text-align: center;
 }
 
 @keyframes animation{
@@ -929,8 +958,8 @@ footer{
    }
 }
 
-@media (max-width: 920px){
-   .event, .visions{
+@media (max-width: 980px){
+   .event, .visions, .members{
       justify-content: center;
    }
 
@@ -1125,7 +1154,7 @@ footer{
       overflow: hidden;
    }
 
-   .event, .visions{
+   .event, .visions, .members{
       justify-content: center;
    }
 
@@ -1151,7 +1180,7 @@ footer{
          overflow: hidden;
       }
 
-      .event, .visions{
+      .event, .visions, .members{
          justify-content: center;
       }
    
