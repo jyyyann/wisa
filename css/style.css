@@ -934,9 +934,10 @@ footer{
    overflow: auto;
 }
 
-.flag{
-   width: 36px;
-   height: 25px;
+.icon{
+   width: 50px;
+   height: 45px;
+   padding-bottom: 0;
 }
 
 .member-des h1{
