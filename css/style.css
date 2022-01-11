@@ -8,7 +8,7 @@
  
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap');
 /*font-family: 'Lora', serif;*/ /*definition*/
- 
+
 *{
    padding: 0;
    margin: 0;
@@ -40,12 +40,11 @@ p{
 }
 
 .p-links{
-   color: #5cb4b0;
-   text-decoration: underline;
+   color: #50C7C7;
 }
 
 .p-links:hover{
-   color: #51dbc9;
+   color: #84e9cb;
 }
 
  
@@ -970,7 +969,7 @@ footer{
 
 .branch{
    width: 490px;
-   height: 400px;
+   min-height: 400px;
 
    text-align: left;
    border-radius: 15px;
@@ -997,6 +996,17 @@ footer{
    padding-inline-start: 1ch;
 }
 
+/*merch starts*/
+.merch img{
+   width: 400px;
+   height: auto;
+}
+
+.merch form{
+   padding-top: 10px;
+}
+
+/*merch ends*/
 
 @keyframes animation{
    from{
