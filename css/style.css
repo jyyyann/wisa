@@ -1005,8 +1005,27 @@ footer{
 .merch form{
    padding-top: 10px;
 }
-
 /*merch ends*/
+
+/*contact page starts*/
+.contact-form h2{
+   line-height: 4rem;
+}
+.contact-form input, .contact-form textarea{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.1rem;
+   height: 40px;
+   width: 400px;
+}
+
+.contact-form textarea{
+   height: 300px;
+}
+
+.contact-form .btn{
+   padding-top: 20px;
+}
+/*contact page ends*/
 
 @keyframes animation{
    from{
