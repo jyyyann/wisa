@@ -333,7 +333,7 @@ main{
    margin: auto;
 }
  
-.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event, .members{
+.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event, .members, .exec-branch{
    padding: 2rem 0;
 }
  
@@ -600,7 +600,7 @@ footer{
    margin: auto;
  }
 
- .event, .visions, .members{
+ .event, .visions, .members, .exec-branch{
    padding: 20px 0;
    /*justify-content: center;
    align-content: space-between;*/
@@ -955,6 +955,49 @@ footer{
    height: 50px;
 }
 
+.exec-branch{
+   padding: 20px 0;
+   /*justify-content: center;
+   align-content: space-between;*/
+
+   justify-content: space-between;
+   align-items: left;
+   display: flex;
+   flex-wrap: wrap;
+   grid-gap: 1.5em;
+   margin: auto;
+}
+
+.branch{
+   width: 490px;
+   height: 400px;
+
+   text-align: left;
+   border-radius: 15px;
+   padding: 1rem;
+}
+
+.branch h3{
+   background-color: #d3faf3;
+}
+
+.branch ul, .role ul, .nomination ul{
+   list-style: disc;
+   padding: 5px;
+   margin-left: 20px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.2rem;
+   line-height: 2.2rem;
+}
+
+.branch ul li, .role ul li, .nomination ul li{
+   display: list-item;
+   list-style-type: "◉";
+   padding-inline-start: 1ch;
+}
+
+
 @keyframes animation{
    from{
        opacity: 0;
@@ -966,17 +1009,21 @@ footer{
    }
 }
 
-
-@media (max-width: 1500px){
-   .visions{
+@media (max-width: 1450px){
+   .visions, .exec-branch{
       justify-content: center;
    }
 }
 
 @media (max-width: 1200px){
+   main{
+      width: 90%;
+      overflow: hidden;
+   }
+/*
    .event, .visions, .members{
       justify-content: center;
-   }
+   }*/
 
    .hamburger-menu-container{
        display: flex;
