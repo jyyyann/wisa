@@ -937,7 +937,9 @@ footer{
 .icon{
    width: 50px;
    height: 45px;
-   padding-bottom: 0;
+   position: absolute;
+   padding-bottom: 5px;
+   
 }
 
 .member-des h1{
@@ -947,6 +949,10 @@ footer{
 
 .member-des h3{
    text-align: center;
+}
+
+.name-flag{
+   height: 40px;
 }
 
 @keyframes animation{
