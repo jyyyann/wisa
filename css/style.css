@@ -1277,8 +1277,9 @@ footer{
          overflow: hidden;
       }
 
-      .event, .visions, .members{
-         justify-content: center;
+      .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
+         width: 100%;
+         margin: auto;
       }
    
       .slider{
