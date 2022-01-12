@@ -320,7 +320,6 @@ main{
    text-align: left;
 }
 
-
 .vision-des{
    margin: auto;
 }
@@ -663,8 +662,42 @@ footer{
    text-align: left;
 }
 
+/*lastest event layout*/
+.event-banner{
+   width: 70%;
+   height: auto;
+   margin: auto;
+   display: flex;
+   background-size: cover;
+
+   background-image: 
+   linear-gradient(
+     rgba(255, 255, 255, 0.911),
+     rgba(255, 255, 255, 0.432)
+   ),
+   url(../assets/event-graphic.png);
+}
+
+.event-description{
+   padding: 2rem;
+   width: 60%;
+}
+
+.event-images{
+   margin: auto;
+   justify-content: center;
+   padding: 2rem 0;
+}
+
+.event-image1 img{
+   width: 300px;
+   height: auto;
+   object-fit: cover;
+}
+
 .details{
    padding-top: 0.8rem;
+   text-align: left;
 }
 
 .details i{
@@ -673,8 +706,8 @@ footer{
 
  .flip-card{
    background-color: transparent;
-   width: 490px;
-   height: 490px;
+   width: 320px;
+   height: 550px;
    border-radius: 15px;
    perspective: 1000px;
  }
@@ -1044,6 +1077,13 @@ footer{
 .flip-card form{
    padding: 1rem 0;
 }
+ 
+ [class^="d-icon"]{
+   width: 28px;
+   height: 28px;
+   position: relative;
+   fill: #fff;
+ }
 
 @keyframes animation{
    from{
@@ -1248,11 +1288,6 @@ footer{
 }
 
 @media (max-width: 700px){
-   main{
-      width: 90%;
-      overflow: hidden;
-   }
-
    .event, .visions, .members{
       justify-content: center;
    }
@@ -1274,9 +1309,9 @@ footer{
 }
 
    @media (max-width: 480px){
-      main{
+      .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
          width: 90%;
-         overflow: hidden;
+         margin: auto;
       }
    
       .slider{
