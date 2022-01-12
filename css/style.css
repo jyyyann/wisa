@@ -320,6 +320,11 @@ main{
    text-align: left;
 }
 
+.member-des{
+   min-width: 90%;
+   padding: 0;
+}
+
 .vision-des{
    margin: auto;
 }
@@ -339,7 +344,7 @@ main{
    padding: 2rem 0;
 }
 
-.welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
+.welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events{
    width: 70%;
    margin: auto;
 }
@@ -617,17 +622,29 @@ footer{
    margin: auto;
  }
 
- .event, .visions, .members, .exec-branch{
+ .event, .members{
    padding: 20px 0;
    /*justify-content: center;
    align-content: space-between;*/
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); /*this */
+   margin: auto;
+   grid-gap: 80px;
+ }
+
+ .member{
+    width: 300px;
+    height: auto;
+ }
+
+ .exec-branch, .visions{
+   padding: 20px 0;
    justify-content: center;
    display: flex;
    flex-wrap: wrap;
    grid-gap: 1.5em;
    margin: auto;
  }
- 
 
  .logo-con img{
       width: 100%;
@@ -664,7 +681,6 @@ footer{
 
 /*lastest event layout*/
 .event-banner{
-   width: 70%;
    height: auto;
    margin: auto;
    display: flex;
@@ -996,7 +1012,7 @@ footer{
    font-size: 1.70rem;
 }
 
-.member-des h3{
+.member-des h3, h2{
    text-align: center;
 }
 
@@ -1098,7 +1114,7 @@ footer{
 
 
 @media (max-width: 1200px){
-   .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
+   .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events{
       width: 90%;
       margin: auto;
    }
@@ -1287,8 +1303,14 @@ footer{
    }
 }
 
-@media (max-width: 700px){
-   .event, .visions, .members{
+@media (max-width: 992px){
+   .event-banner{
+      background-image: none;
+   }
+}
+
+@media (max-width: 768px){
+   .event, .visions{
       justify-content: center;
    }
 
@@ -1308,12 +1330,17 @@ footer{
    }
 }
 
-   @media (max-width: 480px){
-      .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
+   @media (max-width: 576px){
+      .welcome, .values, .recruit, .roles, .why, .nomination, .accordion, .merches{
          width: 90%;
          margin: auto;
       }
-   
+
+      .members{
+         width: 50%;
+         margin: auto;
+      }
+
       .slider{
          height: 233px;
          width: 350px;
