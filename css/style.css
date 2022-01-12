@@ -350,7 +350,7 @@ main{
 }
 
 .event{
-   width: 90%;
+   width: 70%;
    margin: auto;
 }
 
@@ -1037,6 +1037,10 @@ footer{
 .flip-card{
    display: inline-block; 
    justify-content: flex-start;
+}
+
+.flip-card form{
+   padding: 1rem 0;
 }
 
 @keyframes animation{
