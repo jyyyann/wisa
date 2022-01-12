@@ -304,7 +304,7 @@ header{
 }
  
 main{
-   width: 70%;
+   width: 100%;
    margin: auto;
    text-align: center;
 }
@@ -335,7 +335,22 @@ main{
 .box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event, .members, .exec-branch{
    padding: 2rem 0;
 }
- 
+
+.welcome, .values, .members, .recruit, .roles, .why, .nomination{
+   width: 70%;
+   margin: auto;
+}
+
+.exec-branch{
+   width: auto;
+   justify-content: center;
+}
+
+.event{
+   width: 90%;
+   margin: auto;
+}
+
 .vision{
    padding: 4rem 0 3rem 0;
 }
@@ -603,9 +618,7 @@ footer{
    padding: 20px 0;
    /*justify-content: center;
    align-content: space-between;*/
-
-   justify-content: space-between;
-   align-items: left;
+   justify-content: center;
    display: flex;
    flex-wrap: wrap;
    grid-gap: 1.5em;
@@ -656,10 +669,9 @@ footer{
 
  .flip-card{
    background-color: transparent;
-   width: 320px;
+   width: 490px;
    height: 550px;
    border-radius: 15px;
-
    perspective: 1000px;
  }
 
@@ -897,6 +909,7 @@ footer{
    font-family: 'Montserrat', sans-serif;
    font-size: 1.2rem;
    background-color: transparent;
+   color: black;
    text-align: left;
    border-bottom: 2px solid #eee;
    transition: background 0.2s;
@@ -952,19 +965,6 @@ footer{
 
 .name-flag{
    height: 50px;
-}
-
-.exec-branch{
-   padding: 20px 0;
-   /*justify-content: center;
-   align-content: space-between;*/
-
-   justify-content: space-between;
-   align-items: left;
-   display: flex;
-   flex-wrap: wrap;
-   grid-gap: 1.5em;
-   margin: auto;
 }
 
 .branch{
@@ -1027,6 +1027,15 @@ footer{
 }
 /*contact page ends*/
 
+.event{
+   text-align: center;
+}
+
+.flip-card{
+   display: inline-block; 
+   justify-content: flex-start;
+}
+
 @keyframes animation{
    from{
        opacity: 0;
@@ -1038,16 +1047,11 @@ footer{
    }
 }
 
-@media (max-width: 1450px){
-   .visions, .exec-branch{
-      justify-content: center;
-   }
-}
 
 @media (max-width: 1200px){
-   main{
+   .welcome, .values, .members, .recruit, .roles, .why, .nomination{
       width: 90%;
-      overflow: hidden;
+      margin: auto;
    }
 /*
    .event, .visions, .members{
@@ -1231,11 +1235,6 @@ footer{
    .home-banner{
       height: 340px;
       width: 550px;
-   }
-
-   main{
-      width: 90%;
-      overflow: hidden;
    }
 }
 
