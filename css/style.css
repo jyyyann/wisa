@@ -340,7 +340,7 @@ main{
    margin: auto;
 }
  
-.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .events, .event, .members, .exec-branch{
+.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .members, .exec-branch{
    padding: 2rem 0;
 }
 
@@ -700,7 +700,6 @@ footer{
 .event-images{
    margin: auto;
    justify-content: center;
-   padding: 1rem;
 }
 
 .real-shade{
@@ -1386,7 +1385,7 @@ footer{
 }
 
    @media (max-width: 576px){
-      .welcome, .values, .recruit, .roles, .why, .nomination, .accordion, .merches, .visions{
+      .welcome, .values, .recruit, .roles, .why, .nomination, .accordion, .merches, .visions, .events{
          width: 90%;
          margin: auto;
       }
@@ -1434,10 +1433,6 @@ footer{
       object-fit: cover;
       border-radius: 15px;
       margin-bottom: 20px;*/
-   }
-
-   .event-description{
-      width: 70%;
    }
 
 }
