@@ -108,24 +108,39 @@
     <h1>Contact us</h1><br>
         <div class="contact-form">
             <form action="https://formsubmit.co/jasmine.yip1031@gmail.com" method="POST">
-                <div class="name">
-                    <div class="text"><h2>Your Name *</h2></div>
-                    <input type= "text" name="name" name="name" placeholder="&nbsp;&nbsp;Jane Smith" required>
+                <div class="row">
+                <div class="fname">
+                    <input type= "text" name="name" name="first-name" placeholder="&nbsp;&nbsp;First Name *" required>
+                </div>
+                <div class="lname">
+                    <input type= "text" name="name" name="last-name" placeholder="&nbsp;&nbsp;Last Name *" required>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="instagram">
+                    <input type= "text" name="name" name="instagram" placeholder="&nbsp;&nbsp;Instagram (optional)">
                 </div>
                 <div class="email">
-                    <div class="text"><h2>Your Email *</h2></div>
-                    <input type= "email" name="email" name="email" placeholder="&nbsp;&nbsp;janesmith@gmail.com" required>
+                    <input type= "email" name="email" name="email" placeholder="&nbsp;&nbsp;Email *" required>
                 </div>
+                </div>
+                
+                <div class="row">
                 <div class="msg">
-                    <div class="text"><h2>Your Message *</h2></div>
-                    <textarea type="message" id="message" name="message" rows="2" cols="25" placeholder="&nbsp;&nbsp;Type something..." required></textarea>
+                    <textarea type="message" id="message" name="message" rows="2" cols="25" placeholder="&nbsp;&nbsp;Message *" required></textarea>
                 </div>
                 <div class="btn">
                     <button class="trans-btn" type="submit">Send</button>
                 </div>
+                </div>
             </form>
         </div>
     </div>
+
+
+
+
     </main>
     </body>
  
