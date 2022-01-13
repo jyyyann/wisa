@@ -1426,6 +1426,9 @@ footer{
 
    .movieg{
       width: 350px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
       /*
       height: auto;
       object-fit: cover;
@@ -1434,7 +1437,7 @@ footer{
    }
 
    .event-description{
-      width: 80%;
+      width: 70%;
    }
 
 }
