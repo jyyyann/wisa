@@ -344,7 +344,7 @@ main{
    padding: 2rem 0;
 }
 
-.welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
+.welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .contact-us{
    width: 70%;
    margin: auto;
 }
@@ -897,17 +897,19 @@ footer{
    font-family: 'Montserrat', sans-serif;
    display: inline-block;
    padding: 7px 18px 7px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    border: 1.4px solid black;
-    border-radius: 20px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 300;
+   border: 1.4px solid black;
+   border-radius: 20px;
 }
 
 .trans-btn:hover{
    background-color: black;
    color: white;
    transition: 1s;
+   padding: 7px 18px 7px;
 }
 
 
@@ -1109,7 +1111,7 @@ footer{
 
 
 @media (max-width: 1200px){
-   .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events{
+   .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events, .contact-us{
       width: 90%;
       margin: auto;
    }
