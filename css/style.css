@@ -313,7 +313,7 @@ main{
    text-align: center;
 }
  
-.description, .event-des, .member-des{
+.description, .member-des{
    min-width: 70%;
    margin: auto;
    padding: 2rem 1rem;
@@ -692,6 +692,7 @@ footer{
    ),
    url(../assets/event-graphic-2.png);
 }
+
 .event-description{
    padding: 2rem;
 }
@@ -717,6 +718,7 @@ footer{
    height: auto;
    object-fit: cover;
    border-radius: 15px;
+   margin-bottom: 20px;
 }
 
 /*event-layout ends*/
@@ -1364,10 +1366,6 @@ footer{
       display: table;
    }
 
-   .event-image{
-      padding-bottom: 100px;
-   }
-
    .event-description { display: table-footer-group; } /*description always on bottom*/
    .event-image { display: table-header-group; } /*image always on top*/
 
@@ -1404,8 +1402,8 @@ footer{
       }
 
       .yt-video{
-         height: 210px;
-         width: 320px;
+         height: 233px;
+         width: 350px;
       }
 
       .home-banner{
@@ -1425,4 +1423,18 @@ footer{
       height: 400px;
       width: 350px;
    }
+
+   .movieg{
+      width: 350px;
+      /*
+      height: auto;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;*/
+   }
+
+   .event-description{
+      width: 80%;
+   }
+
 }
