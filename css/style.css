@@ -697,6 +697,10 @@ footer{
    padding: 2rem;
 }
 
+.event-description h2{
+   padding-top: 1rem;
+}
+
 .event-images{
    margin: auto;
    justify-content: center;
@@ -1391,13 +1395,13 @@ footer{
       }
 
       .slider{
-         height: 233px;
-         width: 350px;
+         height: 317px;
+         width: 480px;
       }
    
       .slide img{
-         height: 233px;
-         width: 350px;
+         height: 317px;
+         width: 480px;
       }
 
       .yt-video{
@@ -1412,7 +1416,7 @@ footer{
    }
 
 
-@media (max-width: 400px){
+@media (max-width: 480px){
    .contact-form input{
       height: 40px;
       width: 350px;
@@ -1435,4 +1439,13 @@ footer{
       margin-bottom: 20px;*/
    }
 
+   .slider{
+      height: 230px;
+      width: 350px;
+   }
+
+   .slide img{
+      height: 230px;
+      width: 350px;
+   }
 }
