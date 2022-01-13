@@ -344,9 +344,19 @@ main{
    padding: 2rem 0;
 }
 
-.welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events{
+.welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches{
    width: 70%;
    margin: auto;
+}
+
+.events{
+   width: 80%;
+   margin: auto;
+}
+
+.members{
+   align-items: center; /* left and right */
+   justify-items: center; 
 }
 
 .exec-branch{
@@ -687,13 +697,17 @@ footer{
    background-size: cover;
 
    background-image: 
+   url(../assets/event-graphic.png);
+}
+
+.fliped{
+   background-image: 
    linear-gradient(
      rgba(255, 255, 255, 0.911),
      rgba(255, 255, 255, 0.432)
    ),
-   url(../assets/event-graphic.png);
+   url(../assets/event-graphic-2.png);
 }
-
 .event-description{
    padding: 2rem;
    width: 60%;
@@ -705,11 +719,18 @@ footer{
    padding: 2rem 0;
 }
 
-.event-image1 img{
+.beachg{
    width: 300px;
    height: auto;
    object-fit: cover;
 }
+
+.movieg{
+   width: 400px;
+   height: auto;
+   object-fit: cover;
+}
+
 
 .details{
    padding-top: 0.8rem;
@@ -1012,7 +1033,7 @@ footer{
    font-size: 1.70rem;
 }
 
-.member-des h3, h2{
+.member-des h3{
    text-align: center;
 }
 
@@ -1048,6 +1069,7 @@ footer{
    list-style-type: "◉";
    padding-inline-start: 1ch;
 }
+
 
 /*merch starts*/
 .merch img{
@@ -1303,15 +1325,14 @@ footer{
    }
 }
 
-@media (max-width: 992px){
-   .event-banner{
-      background-image: none;
-   }
-}
 
 @media (max-width: 768px){
    .event, .visions{
       justify-content: center;
+   }
+
+   .event-banner{
+      background-image: none;
    }
 
    .slider{
@@ -1333,11 +1354,6 @@ footer{
    @media (max-width: 576px){
       .welcome, .values, .recruit, .roles, .why, .nomination, .accordion, .merches{
          width: 90%;
-         margin: auto;
-      }
-
-      .members{
-         width: 50%;
          margin: auto;
       }
 
