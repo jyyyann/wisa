@@ -700,6 +700,10 @@ footer{
    url(../assets/event-graphic.png);
 }
 
+.event-banner h2{
+   text-align: left;
+}
+
 .fliped{
    background-image: 
    linear-gradient(
@@ -710,7 +714,6 @@ footer{
 }
 .event-description{
    padding: 2rem;
-   width: 60%;
 }
 
 .event-images{
@@ -1333,6 +1336,8 @@ footer{
 
    .event-banner{
       background-image: none;
+      flex-direction: column;
+      align-items: center;
    }
 
    .slider{
