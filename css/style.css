@@ -107,7 +107,7 @@ header{
 }
  
 .log-sign a:hover{
-   color: #51dbc9;
+   color: #50C7C7;
 }
  
 .nav-links > ul{
@@ -380,8 +380,7 @@ main{
 }
  
 .int{
-   color: #51dbc9;
-   font-size: 3rem;
+   color: #50C7C7;
 }
  
 .slider{
@@ -520,7 +519,7 @@ footer{
    content: '';
    height: 2px;
    width: 15%;
-   background: #51dbc9;
+   background: #50C7C7;
    top: -10px;
 }
  
@@ -546,7 +545,7 @@ footer{
 }
  
 .left .content .social a i:hover{
-   color: #51dbc9;
+   color: #50C7C7;
 }
  
 .center .content .fas{
@@ -560,7 +559,7 @@ footer{
 }
  
 .center .content .fas:hover{
-   color: #51dbc9;
+   color: #50C7C7;
 }
  
 .center .content .text{
@@ -588,7 +587,7 @@ footer{
  
 .right form input:focus,
 .right form textarea:focus{
-   outline-color: #51dbc9;
+   outline-color: #50C7C7;
 }
  
 .right form .btn{
@@ -1046,10 +1045,9 @@ footer{
 
 .branch ul li, .role ul li, .nomination ul li{
    display: list-item;
-   list-style-type: "◉";
+   list-style-type: "❯";
    padding-inline-start: 1ch;
 }
-
 
 /*merch starts*/
 .merch img{
@@ -1386,6 +1384,11 @@ footer{
       height: 400px;
       width: 600px;
    }
+
+   #line-break::after{
+      content: "\a";
+      white-space: pre;
+  }
 }
 
    @media (max-width: 576px){
@@ -1413,10 +1416,12 @@ footer{
          height: 220px;
          width: 350px;
       }
+
+      
    }
 
 
-@media (max-width: 480px){
+@media (max-width: 680px){
    .contact-form input{
       height: 40px;
       width: 350px;
@@ -1447,5 +1452,9 @@ footer{
    .slide img{
       height: 230px;
       width: 350px;
+   }
+
+   .vision-card h2{
+      font-size: 3.5rem;
    }
 }
