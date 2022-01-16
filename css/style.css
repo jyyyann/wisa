@@ -1452,25 +1452,25 @@ footer{
    }
 }
 
-@media (max-device-width: 360px){
+@media (max-width: 360px){
    .home-banner{
-      height: 137px;
-      width: 220px;
+      height: 174px;
+      width: 280px;
    }
 
    .yt-video{
-      height: 147px;
-      width: 220px;
+      height: 187px;
+      width: 280px;
    }
 
    .slider{
-      height: 144px;
-      width: 220px;
+      height: 183px;
+      width: 280px;
    }
 
    .slide img{
-      height: 144px;
-      width: 220px;
+      height: 183px;
+      width: 280px;
    }
 
    .vision-card h2{
@@ -1479,18 +1479,18 @@ footer{
    }
 
    .merch img{
-      width: 220px;
+      width: 280px;
    }
 
    .event-description{
-      width: 220px;
+      width: 280px;
    }
 
    .beachg{
-      width: 220px;
+      width: 280px;
    }
 
    .movieg{
-      width: 220px;
+      width: 280px;
    }
 }
