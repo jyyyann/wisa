@@ -1458,6 +1458,48 @@ footer{
       width: 280px;
    }
 
+   .merch img{
+      width: 280px;
+   }
+
+   .event-description{
+      width: 280px;
+   }
+
+   .slider{
+      height: 210px;
+      width: 320px;
+   }
+
+   .slide img{
+      height: 210px;
+      width: 320px;
+   }
+
+   .vision-card h2{
+      font-size: 2.8rem;
+   }
+
+   .beachg{
+      width: 280px;
+   }
+
+   .movieg{
+      width: 280px;
+   }
+
+   .contact-form input{
+      height: 40px;
+      width: 300px;
+   }
+
+   .contact-form textarea{
+      height: 300px;
+      width: 300px;
+   }
+}
+
+@media (max-width: 320px){
    .yt-video{
       height: 187px;
       width: 280px;
@@ -1470,26 +1512,6 @@ footer{
 
    .slide img{
       height: 183px;
-      width: 280px;
-   }
-
-   .vision-card h2{
-      font-size: 2.7rem;
-   }
-
-   .merch img{
-      width: 280px;
-   }
-
-   .event-description{
-      width: 280px;
-   }
-
-   .beachg{
-      width: 280px;
-   }
-
-   .movieg{
       width: 280px;
    }
 }
