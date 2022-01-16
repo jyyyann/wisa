@@ -361,6 +361,7 @@ main{
 
 .exec-branch{
    width: auto;
+   align-items: center;
    justify-content: center;
 }
 
@@ -633,8 +634,6 @@ footer{
 
  .event, .members{
    padding: 20px 0;
-   /*justify-content: center;
-   align-content: space-between;*/
    display: grid;
    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); /*this */
    margin: auto;
@@ -1014,10 +1013,6 @@ footer{
 
 .member-des h3{
    text-align: center;
-}
-
-.name-flag{
-   height: 50px;
 }
 
 .branch{
@@ -1416,12 +1411,10 @@ footer{
          height: 220px;
          width: 350px;
       }
-
-      
    }
 
 
-@media (max-width: 680px){
+@media (max-width: 480px){
    .contact-form input{
       height: 40px;
       width: 350px;
@@ -1456,5 +1449,47 @@ footer{
 
    .vision-card h2{
       font-size: 3.5rem;
+   }
+}
+
+@media (max-width: 320px){
+   .home-banner{
+      height: 189px;
+      width: 300px;
+   }
+
+   .yt-video{
+      height: 200px;
+      width: 300px;
+   }
+
+   .slider{
+      height: 197px;
+      width: 300px;
+   }
+
+   .slide img{
+      height: 197px;
+      width: 300px;
+   }
+
+   .vision-card h2{
+      font-size: 3rem;
+   }
+
+   .merch img{
+      width: 300px;
+   }
+
+   .event-description{
+      max-width: 300px;
+   }
+
+   .beachg{
+      width: 300px;
+   }
+
+   .movieg{
+      width: 300px;
    }
 }
