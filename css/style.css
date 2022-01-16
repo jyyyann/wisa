@@ -1452,7 +1452,7 @@ footer{
    }
 }
 
-@media (max-width: 320px){
+@media (max-device-width: 360px){
    .home-banner{
       height: 156px;
       width: 250px;
@@ -1475,6 +1475,7 @@ footer{
 
    .vision-card h2{
       font-size: 2.8rem;
+      color: red;
    }
 
    .merch img{
