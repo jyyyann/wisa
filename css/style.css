@@ -1438,17 +1438,23 @@ footer{
    }
 
    .slider{
-      height: 230px;
-      width: 350px;
+      height: 237px;
+      width: 360px;
    }
 
    .slide img{
-      height: 230px;
-      width: 350px;
+      height: 237px;
+      width: 360px;
    }
 
    .vision-card h2{
       font-size: 3.5rem;
+   }
+}
+
+@media (max-width: 375px){
+   .vision-card h2{
+      font-size: 3rem;
    }
 }
 
@@ -1460,6 +1466,10 @@ footer{
 
    .merch img{
       width: 280px;
+   }
+
+   .vision-card h2{
+      font-size: 2.8rem;
    }
 
    .event-description{
@@ -1474,10 +1484,6 @@ footer{
    .slide img{
       height: 210px;
       width: 320px;
-   }
-
-   .vision-card h2{
-      font-size: 2.8rem;
    }
 
    .beachg{
