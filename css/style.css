@@ -1454,43 +1454,43 @@ footer{
 
 @media (max-device-width: 360px){
    .home-banner{
-      height: 156px;
-      width: 250px;
+      height: 137px;
+      width: 220px;
    }
 
    .yt-video{
-      height: 167px;
-      width: 250px;
+      height: 147px;
+      width: 220px;
    }
 
    .slider{
-      height: 164px;
-      width: 250px;
+      height: 144px;
+      width: 220px;
    }
 
    .slide img{
-      height: 164px;
-      width: 250px;
+      height: 144px;
+      width: 220px;
    }
 
    .vision-card h2{
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       color: red;
    }
 
    .merch img{
-      width: 250px;
+      width: 220px;
    }
 
    .event-description{
-      max-width: 250px;
+      width: 220px;
    }
 
    .beachg{
-      width: 250px;
+      width: 220px;
    }
 
    .movieg{
-      width: 250px;
+      width: 220px;
    }
 }
