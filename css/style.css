@@ -1141,6 +1141,12 @@ footer{
    url(../assets/year-graphic.jpg);
 }
 
+.year.second{
+   background-size: cover;
+   background-image: 
+   url(../assets/year-graphic-grn.jpg);
+}
+
 
 .year-banner{
    height: auto;
