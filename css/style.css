@@ -340,7 +340,7 @@ main{
    margin: auto;
 }
  
-.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .members, .exec-branch, .events, .contact-us{
+.box-con, .banner-box, .welcome, .videobox, .aboutwisa, .values, .recruit, .roles, .why, .nomination, .members, .exec-branch, .events, .year-banner, .contact-us{
    padding: 2rem 0;
 }
 
@@ -351,6 +351,11 @@ main{
 
 .events{
    width: 80%;
+   margin: auto;
+}
+
+.year-banner{
+   width: 90%;
    margin: auto;
 }
 
@@ -667,7 +672,7 @@ footer{
 }
 
 
-/*event layout starts*/
+/*event description starts*/
 .event-banner{
    height: auto;
    margin: auto;
@@ -696,6 +701,7 @@ footer{
 }
 
 .event-description h2{
+   font-size: 2rem;
    padding-top: 1rem;
 }
 
@@ -722,10 +728,10 @@ footer{
    margin-bottom: 20px;
 }
 
-/*event-layout ends*/
+/*event description ends*/
 
-.details{
-   padding-top: 0.8rem;
+.details, .year-intro{
+   padding-top: 0.2rem;
    text-align: left;
 }
 
@@ -1128,6 +1134,45 @@ footer{
    fill: #fff;
  }
 
+ /*archives year banner starts*/
+.year{
+   background-size: cover;
+   background-image: 
+   url(../assets/year-graphic.jpg);
+}
+
+
+.year-banner{
+   height: auto;
+   margin: auto;
+   display: flex;
+   color: white;
+}
+
+.year-intro{
+   padding: 2rem;
+}
+
+.year-intro h1{
+   font-size: 4rem;
+   padding-bottom: 1rem;
+}
+
+
+.year-img{
+   margin: auto;
+   justify-content: center;
+}
+
+.year-img img{
+   width: 500px;
+   height: auto;
+   object-fit: cover;
+   border-radius: 15px;
+   margin-bottom: 20px;
+}
+/*archives year banner ends*/
+
 @keyframes animation{
    from{
        opacity: 0;
@@ -1141,14 +1186,10 @@ footer{
 
 
 @media (max-width: 1200px){
-   .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events, .contact-us{
+   .welcome, .values, .members, .recruit, .roles, .why, .nomination, .accordion, .merches, .events, .year-banner, .contact-us{
       width: 90%;
       margin: auto;
    }
-/*
-   .event, .visions, .members{
-      justify-content: center;
-   }*/
 
    .hamburger-menu-container{
        display: flex;
@@ -1347,6 +1388,22 @@ footer{
       margin-top: -80px;
       padding: 7px 60px;
    }
+
+   .year-banner{
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 3rem;
+      display: table;
+      margin: 2rem;
+   }
+
+   .year-intro{
+      padding-bottom: 2rem;
+   }
+
+   .year-img img{
+      width: 650px;
+   }
 }
 
 @media (max-width: 768px){
@@ -1386,8 +1443,14 @@ footer{
   }
 }
 
-   @media (max-width: 576px){
-      .welcome, .values, .recruit, .roles, .why, .nomination, .accordion, .merches, .visions, .events{
+@media (max-width: 700px){
+   .year-img img{
+      width: 500px;
+   }
+}
+
+@media (max-width: 576px){
+      .welcome, .values, .recruit, .roles, .why, .nomination, .accordion, .merches, .visions, .events, .year-banner{
          width: 90%;
          margin: auto;
       }
@@ -1411,6 +1474,10 @@ footer{
          height: 220px;
          width: 350px;
       }
+
+      .year-img img{
+         width: 380px;
+      }
    }
 
 
@@ -1430,11 +1497,6 @@ footer{
       margin: auto;
       justify-content: center;
       align-items: center;
-      /*
-      height: auto;
-      object-fit: cover;
-      border-radius: 15px;
-      margin-bottom: 20px;*/
    }
 
    .slider{
@@ -1449,6 +1511,19 @@ footer{
 
    .vision-card h2{
       font-size: 3.5rem;
+   }
+
+   .year-img img{
+      width: 350px;
+   }
+
+   .year-intro{
+      padding: 0.5rem;
+      padding-bottom: 2rem;
+   }
+
+   .year-intro h1{
+      font-size: 3rem;
    }
 }
 
@@ -1492,6 +1567,10 @@ footer{
 
    .movieg{
       width: 280px;
+   }
+
+   .year-img img{
+      width: 320px;
    }
 
    .contact-form input{
